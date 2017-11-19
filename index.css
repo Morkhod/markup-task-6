@@ -15,6 +15,22 @@ body
     font: 13.33px Arial;
 }
 
+h1
+{
+    margin-bottom: 4px;
+    margin-top: 1em;
+    font-weight: 400;
+    font-size: 13.33px;
+}
+
+h2
+{
+    margin-bottom: 5px;
+    margin-top: 1em;
+    font-weight: 400;
+    font-size: 13.33px;
+}
+
 .blue
 {
     color: #0054b9;
@@ -23,6 +39,17 @@ body
 .red
 {
     color: red;
+}
+
+.title
+{
+    font-size: 138.5%;
+    font-weight: 400;
+}
+
+.light-blue
+{
+    color: #6da2e1;
 }
 
 .bold
@@ -35,16 +62,23 @@ body
     margin-left: 10px;
 }
 
-.ekb
+.city
 {
     color: #999;
     margin-left: 35px;
     margin-top: 12px;
 }
 
-.ekb::before
+.city::before
 {
     content: '◥';
+}
+
+.settings
+{
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 15px;
 }
 
 .mail
@@ -58,27 +92,10 @@ body
     margin-top: 15px;
 }
 
-.title
-{
-    cursor: pointer;
-    font-size: 138.5%;
-    font-weight: 400;
-}
-
-.light-blue
-{
-    color: #6da2e1;
-}
-
 .time
 {
     font-size: 84.6%;
     color: #999;
-}
-
-.line-main
-{
-    margin-bottom: 4px;
 }
 
 ul
@@ -94,7 +111,6 @@ li
 
 .currency
 {
-    font-weight: bold;
     letter-spacing: 1px;
 }
 
@@ -110,7 +126,12 @@ li
     margin-right: 10px;
 }
 
-.search-line
+input:focus
+{
+    outline-width: 0;
+}
+
+.search-line-wrapper
 {
     position: relative;
 }
@@ -133,6 +154,11 @@ li
     cursor: pointer;
 }
 
+.active
+{
+    cursor: pointer;
+}
+
 .scroll
 {
     overflow-y: scroll;
@@ -149,7 +175,7 @@ li
     background-image: url(images/logo.png);
 }
 
-.content
+.content-types
 {
     margin-top: 25px;
 }
@@ -160,17 +186,9 @@ li
     margin-right: 16px;
 }
 
-.visiting,
-.program,
-.afisha,
-.auto-news
+.none-style
 {
     list-style: none;
-}
-
-.humor
-{
-    margin: 0;
 }
 
 .show-more
@@ -185,18 +203,10 @@ li
     opacity: .5;
 }
 
-.content-title,
-.icon,
-.temperature,
-.probki-mark
+.h2__span
 {
     display: inline-block;
     vertical-align: middle;
-}
-
-.wrapper
-{
-    margin-bottom: 5px;
 }
 
 .program-icon
@@ -238,60 +248,57 @@ li
     margin-right: 5px;
 }
 
-.a
+.city-box
 {
     grid-area: a;
 }
 
-.b
+.mail-box
 {
     grid-area: b;
 }
 
-.c
+.main-box
 {
     grid-area: c;
 }
 
-.d
+.advert1-box
 {
     grid-area: d;
 }
 
-.e
+.logo-box
 {
     grid-area: e;
 }
 
-.f
+.left-column-box
 {
     grid-area: f;
 }
 
-.g
+.search-box
 {
     grid-area: g;
 }
 
-.h
+.middle-column-box
 {
     grid-area: h;
 }
 
-.i
+.settings-box
 {
     grid-area: i;
-    text-align: right;
-    padding-right: 30px;
-    padding-top: 15px;
 }
 
-.j
+.right-column-box
 {
     grid-area: j;
 }
 
-.l
+.advert2-box
 {
     grid-area: l;
 }
