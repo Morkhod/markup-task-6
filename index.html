@@ -46,21 +46,25 @@
             <p class="wallet">
                 <span class="currency bold">USD ЦБ</span>
                 <span class="rate">59,18</span>
-                <span class="rate-change">-0,10</span>
+                <span class="rate-change gray">-0,10</span>
                 <span class="currency bold">EUR ЦБ</span>
                 <span class="rate">68,92</span>
-                <span class="rate-change">-0,06</span>
+                <span class="rate-change gray">-0,06</span>
                 <span class="currency bold">НЕФТЬ</span>
                 <span class="rate">63,44</span>
-                <span class="rate-change">-0,27%</span>
-                <span class="more">...</span>
+                <span class="rate-change gray">-0,27%</span>
+                <span class="more gray">...</span>
             </p>
         </div>
         <div class="advert1-box">
-            <article class="adv">
-                <img class="active" src="images/ad1.png" alt="ad1">
-                <p class="blue title active">Домашний Яндекс</p>
-                <p>Сделайте yandex стартовой страницей</p>
+            <article class="adv1">
+                <img class="active" src="images/ad1.png" alt="adv1">
+                <p class="blue title active adv1-title">
+                    <span>Красивые фоны</span>
+                    <br>
+                    <span>для вашего браузера</span>
+                </p>
+                <p class="adv1-description">Элементы Яндекса</p>
             </article>
         </div>
         <div class="logo-box">
@@ -77,23 +81,24 @@
                 <span class="blue content-type active">Музыка</span>
                 <span class="blue content-type active">ещё</span>
             </p>
-            <div class="search-line-wrapper">
+            <div class="search-wrapper">
                 <form>
-                    <input type="search" class="search">
-                    <button type="submit" class="button">Найти</button>
+                    <input type="search" class="search-input">
+                    <button type="submit" class="search-button active">Найти</button>
+                    <div class="search-arrow"></div>
                 </form>
             </div>
-            <p>
+            <p class="search-example">
                 Найдётся всё. Например,
                 <span class="gray active">выхожу один я на дорогу</span>
             </p>
         </div>
         <div class="advert2-box">
-            <img class="active" src="images/ad2.png" alt="ad2">
+            <img class="active" src="images/ad2.jpg" alt="adv2">
         </div>
         <div class="left-column-box">
             <h2>
-                <span class="blue title active h2__span">Посещаемое</span>
+                <span class="blue title active h2-span">Посещаемое</span>
             </h2>
             <ul class="visiting none-style">
                 <li class="visiting-item active">
@@ -112,16 +117,15 @@
                     <span class="bold">Авиабилеты</span> — из Екатеринбурга</li>
             </ul>
             <h2 class="blue title active">Лучшие анекдоты</h2>
-            <br>
-            Раздел: <span class="blue active">Медицинские .</span>
-            <br>
-            - Вас лечить хорошо или бесплатно?
-            <p class="show-more blue bold active">Показать ещё</p>
+            <br>Раздел:
+            <span class="blue active">Медицинские .</span>
+            <br>- Вас лечить хорошо или бесплатно?
+            <p class="switch-joke blue bold active">Показать ещё</p>
         </div>
         <div class="middle-column-box">
             <h2>
-                <span class="blue title active h2__span">Телепрограмма</span>
-                <span class="program-icon h2__span active"></span>
+                <span class="blue title active h2-span">Телепрограмма</span>
+                <span class="program-icon h2-span active"></span>
             </h2>
             <ul class="program none-style">
                 <li class="program-item">
@@ -215,21 +219,21 @@
         </div>
         <div class="right-column-box">
             <h2>
-                <span class="blue title active h2__span">Погода</span>
-                <span class="weather-icon h2__span active"></span>
-                <span class="h2__span title active">−3 °C</span>
+                <span class="blue title active h2-span">Погода</span>
+                <span class="weather-icon h2-span active"></span>
+                <span class="h2-span title active">−2 °C</span>
             </h2>
-            <p class="weather">Вечер -5, ночь -7</p>
+            <p class="weather">Вечер -2, ночь -2</p>
 
             <h2>
-                <span class="blue title active h2__span">Пробки</span>
-                <span class="probki-icon h2__span active"></span>
-                <span class="h2__span title active">4 балла</span>
+                <span class="blue title active h2-span">Пробки</span>
+                <span class="probki-icon h2-span active"></span>
+                <span class="h2-span title active">2 балла</span>
             </h2>
-            <p class="probki">Местами затруднения</p>
+            <p class="probki">Дороги почти свободны</p>
 
             <h2>
-                <span class="blue title active h2__span">Карта Екатеринбурга</span>
+                <span class="blue title active h2-span">Карта Екатеринбурга</span>
             </h2>
             <p class="transport">
                 <span class="bold active">Такси</span>
@@ -241,7 +245,7 @@
             <br>
 
             <h2>
-                <span class="blue title active h2__span">Афиша</span>
+                <span class="blue title active h2-span">Афиша</span>
             </h2>
             <ul class="afisha none-style">
                 <li class="afisha-item active">Субурбикон
@@ -263,7 +267,7 @@
                     <span class="bold">Концерты — Brainstorm</span>
                 </li>
             </ul>
-        </div>        
+        </div>
     </div>
 </body>
 
