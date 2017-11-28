@@ -10,11 +10,6 @@
         'w f h j z';
 }
 
-.blue
-{
-    color: #0054b9;
-}
-
 .red
 {
     color: red;
@@ -35,21 +30,22 @@
     font-weight: 700;
 }
 
-.title
+.widget-title
 {
-    font-size: 138.5%;
-    font-weight: 400;
-}
-
-.margin-left
-{
-    margin-left: 10px;
+    height: 36px;
+    cursor: pointer;
 }
 
 .time
 {
-    font-size: 84.6%;
+    font-size: 64.6%;
     color: #999;
+}
+
+a
+{
+    text-decoration: none;
+    color: #0054b9;
 }
 
 .active
@@ -79,7 +75,7 @@ h2
     margin-top: 1em;
     margin-bottom: 5px;
     font-weight: 400;
-    font-size: 13.33px;
+    font-size: 138.5%;
 }
 
 body
@@ -108,7 +104,7 @@ body
 
 .mail
 {
-    padding: 3px 0;
+    padding: 3px 0 3px 10px;
     box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
 }
 
@@ -130,7 +126,8 @@ body
 
 .adv1
 {
-    margin-top: 1em;
+    display: block;
+    margin-top: 1.39em;
 }
 
 .adv1-title
@@ -166,6 +163,7 @@ body
 
 .search-input
 {
+    vertical-align: top;
     width: calc(92% - 85px);
     height: 36px;
     border: 2px solid #ffdb4d;
@@ -173,6 +171,7 @@ body
 
 .search-button
 {
+    vertical-align: top;
     font-size: 16px;
     width: 75px;
     height: 36px;
@@ -196,7 +195,7 @@ body
     margin-top: 7px;
 }
 
-.h2-span
+.icon
 {
     display: inline-block;
     vertical-align: middle;
@@ -236,6 +235,7 @@ body
 
 .auto-news
 {
+    padding: 8px 0;
     overflow-y: scroll;
     padding-right: 30px;
     max-height: 240px;
