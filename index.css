@@ -58,7 +58,8 @@ a
     list-style: none;
 }
 
-ul
+ul,
+figure
 {
     padding: 0;
     margin: 0;
@@ -85,6 +86,8 @@ body
 
 .city
 {
+    display: inline-block;
+    vertical-align: middle;
     color: #999;
     margin-top: 12px;
     margin-left: 35px;
@@ -92,12 +95,19 @@ body
 
 .city::before
 {
-    content: '◥';
+    display: inline-block;
+    vertical-align: middle;
+    content: ' ';
+    background-image: url('images/city-icon.svg');
+    background-size: 19px 19px;
+    height: 19px;
+    width: 19px;
 }
 
 .settings
 {
     text-align: right;
+    margin: 0;
     padding-top: 15px;
     padding-right: 30px;
 }
@@ -156,14 +166,13 @@ body
     margin-right: 16px;
 }
 
-.search-wrapper
+.search-form
 {
-    position: relative;
+    display: flex;
 }
 
 .search-input
 {
-    vertical-align: top;
     width: calc(92% - 85px);
     height: 36px;
     border: 2px solid #ffdb4d;
@@ -171,7 +180,6 @@ body
 
 .search-button
 {
-    vertical-align: top;
     font-size: 16px;
     width: 75px;
     height: 36px;
@@ -181,8 +189,6 @@ body
 
 .search-arrow
 {
-    display: inline-block;
-    vertical-align: top;
     width: 0;
     height: 0;
     border-style: solid;
@@ -242,8 +248,8 @@ body
     width: 100%;
 }
 
-.auto-news-wrapper:before,
-.auto-news-wrapper:after
+.auto-news-wrapper::before,
+.auto-news-wrapper::after
 {
     content: '';
     position: absolute;
@@ -251,13 +257,13 @@ body
     height: 20px;
 }
 
-.auto-news-wrapper:before
+.auto-news-wrapper::before
 {
     top: 0;
     background: linear-gradient(to bottom, white, transparent);
 }
 
-.auto-news-wrapper:after
+.auto-news-wrapper::after
 {
     bottom: 0;
     background: linear-gradient(to top, white, transparent);
@@ -294,7 +300,7 @@ body
     grid-area: a;
 }
 
-.mail-box
+.register-box
 {
     grid-area: b;
 }

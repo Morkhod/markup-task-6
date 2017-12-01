@@ -8,14 +8,14 @@
 </head>
 
 <body>
-    <div class="layout">
-        <div class="city-box">
+    <article class="layout">
+        <section class="city-box">
             <p class="city active">Екатеринбург</p>
-        </div>
-        <div class="settings-box">
-            <div class="settings active">Настройка</div>
-        </div>
-        <div class="mail-box">
+        </section>
+        <section class="settings-box">
+            <p class="settings active">Настройка</p>
+        </section>
+        <section class="register-box">
             <article class="mail">
                 <p class="bold active">
                     <span class="red">l</span>ogin
@@ -24,24 +24,33 @@
                     <span class="bold">138</span>
                 </p>
             </article>
-        </div>
-        <div class="main-box">
+        </section>
+        <article class="main-box">
             <h1>
                 <a href="#">Сейчас в СМИ</a>
                 <a href="#" class="light-blue">в Екатеринбурге</a>
-                <span class="time">13 ноября, понедельник 16:57</span>
+                <time class="time" datetime="2017-11-13 16:57">13 ноября, понедельник 16:57</time>
             </h1>
             <ul class="news">
-                <li class="news-item">В Кремле ответили на слова экс-главы ЦРУ о «запуганном»
-                    Путиным Трампе</li>
-                <li class="news-item">Число жертв землетрясения в Иране и Ираке превысило
-                    350 человек</li>
-                <li class="news-item">Вероятной целью проникновения в РФ украинского
-                    дрона назвали шпионаж</li>
-                <li class="news-item">Кремль рассказал о местонахождении в Сирии не
-                    явившегося в суд Сечина</li>
-                <li class="news-item">Кремль прокомментировал перенос послания Путина
-                    Федеральному собранию</li>
+                <li class="news-item">
+                    В Кремле ответили на слова экс-главы ЦРУ о «запуганном» Путиным
+                    Трампе
+                </li>
+                <li class="news-item">
+                    Число жертв землетрясения в Иране и Ираке превысило 350 человек
+                </li>
+                <li class="news-item">
+                    Вероятной целью проникновения в РФ украинского дрона назвали
+                    шпионаж
+                </li>
+                <li class="news-item">
+                    Кремль рассказал о местонахождении в Сирии не явившегося в суд
+                    Сечина
+                </li>
+                <li class="news-item">
+                    Кремль прокомментировал перенос послания Путина Федеральному
+                    собранию
+                </li>
             </ul>
             <p class="wallet">
                 <span class="currency bold">USD ЦБ</span>
@@ -55,8 +64,8 @@
                 <span class="rate-change gray">-0,27%</span>
                 <span class="more gray">...</span>
             </p>
-        </div>
-        <div class="advert1-box">
+        </article>
+        <section class="advert1-box">
             <a href="#" class="adv1">
                 <img src="images/ad1.png" alt="adv1">
                 <h2 class="adv1-title">
@@ -66,11 +75,12 @@
                 </h2>
             </a>
             Элементы Яндекса
-        </div>
-        <div class="logo-box">
-            <div class="logo"></div>
-        </div>
-        <div class="search-box">
+        </section>
+        <figure class="logo-box">
+            <img class="logo" src="images/logo.webp" alt="logo">
+            <figcaption></figcaption>
+        </figure>
+        <article class="search-box">
             <p class="content-types">
                 <a href="#" class="content-type">Видео</a>
                 <a href="#" class="content-type">Картинки</a>
@@ -81,40 +91,46 @@
                 <a href="#" class="content-type">Музыка</a>
                 <a href="#" class="content-type">ещё</a>
             </p>
-            <div class="search-wrapper">
-                <form>
-                    <input type="search" class="search-input"><!--
-                    --><input type="submit" class="search-button" value="Найти"><!--
-                    --><div class="search-arrow"></div>
-                </form>
-            </div>
+            <form class="search-form">
+                <input type="search" class="search-input">
+                <input type="submit" class="search-button" value="Найти">
+                <div class="search-arrow"></div>
+            </form>
             <p class="search-example">
                 Найдётся всё. Например,
                 <span class="gray active">выхожу один я на дорогу</span>
             </p>
-        </div>
-        <div class="advert2-box">
+        </article>
+        <figure class="advert2-box">
             <img class="active" src="images/ad2.jpg" alt="adv2">
-        </div>
-        <div class="left-column-box">
+            <figcaption></figcaption>
+        </figure>
+        <section class="left-column-box">
             <h2 class="widget-title">
                 <a href="#">Посещаемое</a>
             </h2>
             <ul class="visiting none-style">
                 <li class="visiting-item active">
-                    <span class="bold">Маркет</span> — китайская распродажа</li>
+                    <span class="bold">Маркет</span> — китайская распродажа
+                </li>
                 <li class="visiting-item active">
-                    <span class="bold">Авто.ру</span> — Туссан третьей серии</li>
+                    <span class="bold">Авто.ру</span> — Туссан третьей серии
+                </li>
                 <li class="visiting-item active">
-                    <span class="bold">Недвижимость</span> — продажа студии</li>
+                    <span class="bold">Недвижимость</span> — продажа студии
+                </li>
                 <li class="visiting-item active">
-                    <span class="bold">Работа</span> — охранником</li>
+                    <span class="bold">Работа</span> — охранником
+                </li>
                 <li class="visiting-item active">
-                    <span class="bold">Здоровье</span> — врач на связи</li>
+                    <span class="bold">Здоровье</span> — врач на связи
+                </li>
                 <li class="visiting-item active">
-                    <span class="bold">Коллекции</span> — как мелировать волосы</li>
+                    <span class="bold">Коллекции</span> — как мелировать волосы
+                </li>
                 <li class="visiting-item active">
-                    <span class="bold">Авиабилеты</span> — из Екатеринбурга</li>
+                    <span class="bold">Авиабилеты</span> — из Екатеринбурга
+                </li>
             </ul>
             <h2 class="widget-title">
                 <a href="#">Лучшие анекдоты</a>
@@ -125,40 +141,40 @@
             <p class="switch-joke bold">
                 <a href="#">Показать ещё</a>
             </p>
-        </div>
-        <div class="middle-column-box">
+        </section>
+        <section class="middle-column-box">
             <h2 class="widget-title">
                 <a href="#">Телепрограмма</a>
                 <a class="program-icon icon"></a>
             </h2>
             <ul class="program none-style">
                 <li class="program-item">
-                    <span class="program-time">16:00</span>
+                    <time class="program-time">16:00</time>
                     <span class="program-name active">Понять. Простить</span>
                     <span class="gray active">41 Домашний</span>
                 </li>
                 <li class="program-item">
-                    <span class="program-time">16:30</span>
+                    <time class="program-time">16:30</time>
                     <span class="program-name active">Место встречи</span>
                     <span class="gray active">НТВ</span>
                 </li>
                 <li class="program-item">
-                    <span class="program-time">16:30</span>
+                    <time class="program-time">16:30</time>
                     <span class="program-name active">Детективы</span>
                     <span class="gray active">Пятый канал</span>
                 </li>
                 <li class="program-item">
-                    <span class="program-time">16:30</span>
+                    <time class="program-time">16:30</time>
                     <span class="program-name active">Новости</span>
                     <span class="gray active">РЕН ТВ</span>
                 </li>
                 <li class="program-item">
-                    <span class="program-time">16:30</span>
+                    <time class="program-time">16:30</time>
                     <span class="program-name active">Гадалка</span>
                     <span class="gray active">ТВ-3</span>
                 </li>
                 <li class="program-item">
-                    <span class="program-time">16:30</span>
+                    <time class="program-time">16:30</time>
                     <span class="program-name active">Реальные пацаны</span>
                     <span class="gray active">ТНТ</span>
                 </li>
@@ -171,59 +187,59 @@
                     <li class="auto-news-item">
                         <span class="auto-news-name active">В Китае представили спорткар с двигателем
                             от Ford Focus RS</span>
-                        <span class="time">12:00</span>
+                        <time class="time">12:00</time>
                     </li>
                     <li class="auto-news-item">
                         <span class="auto-news-name active">Ладу наконец-то оснастят системой управления
                             со смартфона</span>
-                        <span class="time">13:30</span>
+                        <time class="time">13:30</time>
                     </li>
                     <li class="auto-news-item">
                         <span class="auto-news-name active">Правительство поддержало законопроект
                             о регистрации машиномест</span>
-                        <span class="time">14:00</span>
+                        <time class="time">14:00</time>
                     </li>
                     <li class="auto-news-item">
                         <span class="auto-news-name active">Обзор нового Mitsubishi, за которым выстроилась
                             очередь
                         </span>
-                        <span class="time">15:00</span>
+                        <time class="time">15:00</time>
                     </li>
                     <li class="auto-news-item">
                         <span class="auto-news-name active">Tesla представила эскиз электро-пикапа
                             на базе грузовика Semi</span>
-                        <span class="time">15:01</span>
+                        <time class="time">15:01</time>
                     </li>
                     <li class="auto-news-item">
                         <span class="auto-news-name active">Эксперты составили топ-10 самых надежных
                             машин в Европе</span>
-                        <span class="time">15:02</span>
+                        <time class="time">15:02</time>
                     </li>
                     <li class="auto-news-item">
                         <span class="auto-news-name active">Два беспилотника Jaguar и Range Rover
                             тестируют в Британии</span>
-                        <span class="time">15:03</span>
+                        <time class="time">15:03</time>
                     </li>
                     <li class="auto-news-item">
                         <span class="auto-news-name active">Топовый кроссовер BMW X2 оснастят 300-сильным
                             мотором
                         </span>
-                        <span class="time">15:04</span>
+                        <time class="time">15:04</time>
                     </li>
                     <li class="auto-news-item">
                         <span class="auto-news-name active">Porsche вынудили вернуться к идее гибридного
                             спорткара 911</span>
-                        <span class="time">15:05</span>
+                        <time class="time">15:05</time>
                     </li>
                     <li class="auto-news-item">
                         <span class="auto-news-name active">Редчайший кабриолет ВАЗ-2108 продается
                             за 1 миллион рублей</span>
-                        <span class="time">15:06</span>
+                        <time class="time">15:06</time>
                     </li>
                 </ul>
             </article>
-        </div>
-        <div class="right-column-box">
+        </section>
+        <section class="right-column-box">
             <h2 class="widget-title">
                 <a href="#">Погода</a>
                 <span class="weather-icon icon"></span>
@@ -273,8 +289,8 @@
                     <span class="bold">Концерты — Brainstorm</span>
                 </li>
             </ul>
-        </div>
-    </div>
+        </section>
+    </article>
 </body>
 
 </html>
